@@ -27,11 +27,13 @@ public class Main {
                     String writeFileName = scanner.nextLine();
                     System.out.print("Enter text content: ");
                     String writeContent = scanner.nextLine();
+                    // Виклик методу для створення та запису файлу
                     FileWriteService.writeToFile(writeFileName, writeContent);
                     break;
                 case 2:
                     System.out.print("Enter the name of the file to read: ");
                     String readFileName = scanner.nextLine();
+                    // Виклик методу для читання файлу
                     String fileContent = FileReadService.readFromFile(readFileName);
                     System.out.println("File contents:");
                     System.out.println(fileContent);
